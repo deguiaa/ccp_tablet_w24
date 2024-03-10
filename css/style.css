@@ -217,19 +217,7 @@ div.container {
     }
 }
 
-/* Desktop View */
-@media screen and (min-width: 800px) {
-  .navbar {   
-    flex-direction: row;
-  }
-  .pet {   
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-  .gallery {   
-  display: auto auto auto auto
-  }
-}
+
 
 /* Optional reduced motion */
 /* @media (prefers-reduced-motion: reduce) {
