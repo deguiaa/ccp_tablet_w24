@@ -81,10 +81,11 @@ p{
 
 img {
   width: 80vw;
+  box-sizing: border-box;
   height: auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin:auto;
+  text-align: center;
 }
 
 ul li{
@@ -129,13 +130,13 @@ div.container {
   box-sizing: border-box;
   grid-template-columns: auto;
   align-items: center;
-  margin: 10px 10px 10px 20px
+  margin: auto
 }
 
-.pet, .trip .polaroid{
+.pet .polaroid, .trip .polaroid{
   width: 60vw
 }
-.pet, .trip .polaroid img{
+.pet .polaroid img, .trip .polaroid img{
   width: 60vw
 }
 
@@ -170,10 +171,7 @@ div.container {
   .navbar {   
     flex-direction: row;
   }
-  .pet {   
-    display: grid;
-    grid-template-columns: auto auto;
-  }
+
   .gallery {
     display: flex;
     gap: 8px;
@@ -188,7 +186,6 @@ div.container {
     display: block;
     margin-left: 15px;
   }
-
   
   .gallery img{
     
@@ -207,7 +204,11 @@ div.container {
       grid-column: 1/-1;
     }
 
-    .trip{
+    .pet p{
+      grid-column: 2 / span 1;
+    }
+
+    .trip, .pet{
       display: grid;
       box-sizing: border-box;
       grid-template-columns: auto auto;
