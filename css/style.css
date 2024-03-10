@@ -188,7 +188,6 @@ div.container {
   }
   
   .gallery img{
-    
       flex-shrink: 0;
       width: auto;
       height: 90vh;
